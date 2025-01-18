@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:native_view_as_flutter_widget/platform_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,8 +38,13 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            SizedBox(
+              height: 200,
+              width: double.infinity,
+              child: PlatformView(),
+            ),
             Container(
-              height: 250,
+              height: 50,
               width: double.infinity,
               color: Colors.purple,
             ),
